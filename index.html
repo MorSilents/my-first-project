@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мой первый проект</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #243041;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 16px 0 20px;
+    }
+
+    .badge {
+      background: #0b1220;
+      border: 1px solid #243041;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #22c55e;
+      color: #06210f;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      filter: brightness(1.05);
+    }
+
+    .footer {
+      margin-top: 14px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 <body>
-  <h1>Я начал путь в IT</h1>
-  <p>Это мой первый локальный проект.</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Я начал путь в IT 🚀</h1>
+      <p>Это мой первый проект, который я сделал локально в VS Code, закоммитил в Git и опубликовал на GitHub Pages.</p>
+
+      <div class="badges">
+        <div class="badge">HTML</div>
+        <div class="badge">CSS</div>
+        <div class="badge">Git</div>
+        <div class="badge">GitHub Pages</div>
+      </div>
+
+      <a class="btn" href="https://github.com/MorSilents/my-first-project" target="_blank">Открыть репозиторий</a>
+
+      <div class="footer">Дальше: делаю лендинг + адаптив + первые проекты на JS.</div>
+    </div>
+  </div>
 </body>
 </html>
